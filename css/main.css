@@ -4,16 +4,16 @@ html {
   margin: 0;
   padding: 0;
 }
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #61BA92;
+}
 #logo{
   height: 160px;
   
 }
 /* NAVBAR */
 
-body{
-  font-family: 'Roboto Condensed', sans-serif;
-  background: #61BA92;
-}
 
 /* BANNER */
 .banner {
@@ -63,16 +63,21 @@ section{
 }
 
 
-/* FONT AWESOME */
-i {
-  display: inline-block;
-  border-radius: 60px;
-  box-shadow: 0px 0px 2px #fff;
-  padding: 0.5em 0.6em;
-
-}
 /* FAQS */
-
+.question {
+  padding: 2%;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+#mlh{
+  color: #fff;
+}
+.answer {
+  font-size: .5em;
+  padding: 2%;
+  text-align: center;
+}
 
 /* Small devices */
 @media (min-width:0px) {
@@ -90,15 +95,21 @@ i {
 
 /* Medium devices (tablets) */
 @media (min-width:768px) {
- h1{
-   font-size: 150px;
- }
- #reg-btn{
-  margin-top: 0px;
+  h1{
+    font-size: 150px;
+  }
+  #reg-btn{
+    margin-top: 0px;
+  }
 }
+/* FONT AWESOME */
+i {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #fff;
+  padding: 0.5em 0.6em;
 
 }
-
 
 
 /* Large devices (desktops)
