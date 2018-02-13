@@ -1,0 +1,117 @@
+
+/* HTML */
+html {
+  margin: 0;
+  padding: 0;
+}
+#logo{
+  height: 160px;
+  
+}
+/* NAVBAR */
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #61BA92;
+}
+
+/* BANNER */
+.banner {
+  /* background: url */
+  color: white;
+  background: #61BA92;
+  height: 759px; 
+  width: 100%;
+  margin-top: 0px;
+  font-weight: 100;
+}
+/* .name {} */
+/* DATE */
+#date {
+  font-size: 50px;
+}
+/* location */
+#location {
+  font-size: 30px;
+}
+#section{
+  text-align: center;
+}
+p{
+  color: #fff;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+/* hr */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; 
+}
+/* button styling */
+#reg-btn{
+  border-radius: 10px;
+}
+section{
+  padding-bottom: 10%;
+}
+
+
+/* FONT AWESOME */
+i {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #fff;
+  padding: 0.5em 0.6em;
+
+}
+/* FAQS */
+
+
+/* Small devices */
+@media (min-width:0px) {
+  .banner {
+  padding-top: 100px;    
+  }
+  h1{
+    font-weight: 100;
+    font-size: 80px;
+  }
+  #reg-btn{
+    margin-top: 50px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width:768px) {
+ h1{
+   font-size: 150px;
+ }
+ #reg-btn{
+  margin-top: 0px;
+}
+
+}
+
+
+
+/* Large devices (desktops)
+@media (min-width:992px) {
+
+}
+
+Extra large devices (large desktops) 
+@media (min-width:1200px) {
+
+} */
+
+
+
+/* FADE CLASSES */
+/* TO DO */
