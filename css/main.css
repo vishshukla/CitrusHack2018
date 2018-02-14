@@ -116,11 +116,11 @@ section{
 /* SPONSORS */
 #sponsors {
   background: linear-gradient(270deg, #474352, #a09da3, #479ff3);
-background-size: 600% 600%;
--webkit-animation: AnimationName 10s ease infinite;
--moz-animation: AnimationName 10s ease infinite;
--o-animation: AnimationName 10s ease infinite;
-animation: AnimationName 10s ease infinite;
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
 }
 
 
