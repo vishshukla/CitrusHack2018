@@ -10,7 +10,7 @@ body{
 }
 #logo{
   height: 160px;
-  
+
 }
 /* NAVBAR */
 
@@ -20,7 +20,7 @@ body{
   /* background: url */
   color: white;
   background: #61BA92;
-  height: 759px; 
+  height: 759px;
   width: 100%;
   margin-top: 0px;
   font-weight: 100;
@@ -37,6 +37,21 @@ body{
 #section{
   text-align: center;
 }
+
+
+
+#faqs {
+  background-color: #58C9B9;
+}
+
+#sponsors {
+  background-color: #519D9E;
+}
+
+footer a>i {
+  color: white !important;
+}
+
 p{
   color: #fff;
 }
@@ -52,20 +67,60 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; 
+  padding: 0;
 }
 /* button styling */
 #reg-btn{
   border-radius: 10px;
 }
 section{
-  padding-bottom: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
+.row {
+  margin: 10% 0;
+}
+
+.col {
+  margin: 10% 0;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.section-heading {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+#first-tier>a>img {
+  width: 70%;
+}
+
+#second-tier>a>img {
+  width: 45%;
+}
 
 /* FAQS */
 .question {
   padding: 2%;
+  padding-top: 50px;
   font-size: 2em;
   text-align: center;
   color: white;
@@ -82,7 +137,7 @@ section{
 /* Small devices */
 @media (min-width:0px) {
   .banner {
-  padding-top: 100px;    
+  padding-top: 100px;
   }
   h1{
     font-weight: 100;
@@ -117,7 +172,7 @@ i {
 
 }
 
-Extra large devices (large desktops) 
+Extra large devices (large desktops)
 @media (min-width:1200px) {
 
 } */

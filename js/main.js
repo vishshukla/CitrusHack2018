@@ -38,3 +38,13 @@ $(document).ready(function() {
     }
   });
 });
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 50) {
+    $('#mainNav').removeClass('bg-dark');
+    $('#mainNav').animate({background: rgba(54, 25, 25, .5)}); 
+  } else {
+    $('#mainNav').animate({background-color: '#343a40 !important'});
+    $('#mainNav').addClass('bg-dark');
+  }
+});
