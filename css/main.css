@@ -11,7 +11,8 @@ body{
 
 
 #logo{
-  height: 160px;
+  height: 210px;
+  margin-bottom: -15px;
 
 }
 /* NAVBAR */
@@ -33,9 +34,6 @@ body{
 
 
 
-#logo{
-  margin-bottom: -15px;
-}
 
 /* DATE */
 #date {
@@ -219,7 +217,7 @@ section{
   }
 
   #reg-btn {
-    margin-top: 15px;
+    margin-top: -10px;
   }
 }
 
