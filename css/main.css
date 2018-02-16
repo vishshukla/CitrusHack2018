@@ -110,13 +110,7 @@ section{
   animation: AnimationName 10s ease infinite;
 }
 
-.row {
-  margin: 5% 0;
-}
 
-.col {
-  margin: 10% 0;
-}
 
 /* SPONSORS */
 #sponsors {
@@ -153,11 +147,15 @@ section{
 }
 
 #first-tier>a>img {
-  width: 70%;
+  width: 50%;
 }
 
-#second-tier>a>img {
+.col-xl-6>a>img {
   width: 45%;
+}
+
+.col-xl-4>a>img {
+  width: 50%;
 }
 
 .question {
