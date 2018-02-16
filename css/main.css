@@ -33,9 +33,10 @@ body{
 
 
 
-/* END ANIMATION */
+#logo{
+  margin-bottom: -15px;
+}
 
-/* .name {} */
 /* DATE */
 #date {
   font-size: 35px;
