@@ -6,7 +6,6 @@ html {
 /* ANIMATION OF GRADIENT */
 body{
   font-family: 'Lato','Roboto Condensed', sans-serif;
-  text-shadow: 0px 0px 10px slategrey;
 }
 
 
@@ -97,29 +96,34 @@ hr {
 }
 
 section{
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-top: 12%;
+  padding-bottom: 12%;
 }
 
 #faqs {
-  background: linear-gradient(270deg, #adc1bc, #64aa99, #648eaa);
+  /*background: linear-gradient(270deg, #adc1bc, #64aa99, #648eaa);
   background-size: 600% 600%;
   -webkit-animation: AnimationName 10s ease infinite;
   -moz-animation: AnimationName 10s ease infinite;
   -o-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;*/
+
+  background-color: #404146;
+
 }
 
 
 
 /* SPONSORS */
 #sponsors {
-  background: linear-gradient(270deg, #474352, #a09da3, #479ff3);
+  /*background: linear-gradient(270deg, #474352, #a09da3, #479ff3);
   background-size: 600% 600%;
   -webkit-animation: AnimationName 10s ease infinite;
   -moz-animation: AnimationName 10s ease infinite;
   -o-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;*/
+
+  background-color: #54546c;
 }
 
 
@@ -158,20 +162,29 @@ section{
   width: 50%;
 }
 
+.q-p {
+  padding: 2%;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+#faq-row {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .question {
   padding: 2%;
   padding-top: 50px;
-  font-size: 2em;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 #mlh{
   color: #fff;
 }
 .answer {
-  font-size: .5em;
   padding: 2%;
-  text-align: center;
+  text-align: left;
 }
 
 @-webkit-keyframes AnimationName {
