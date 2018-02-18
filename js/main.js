@@ -1,6 +1,5 @@
 AOS.init({
   once: false,
-  easing: "ease-in-sine"
 });
 
 (function($) {

@@ -11,8 +11,9 @@ body{
 
 
 #logo{
-  height: 210px;
+  width: 25%;
   margin-bottom: -15px;
+  margin-top: -50px;
 }
 
 #slogan {
@@ -148,7 +149,7 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em auto;
   padding: 0;
-  width: 16.5%;
+  width: 25%;
 }
 /* button styling */
 #reg-btn{
