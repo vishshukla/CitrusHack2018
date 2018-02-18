@@ -6,14 +6,19 @@ html {
 /* ANIMATION OF GRADIENT */
 body{
   font-family: 'Lato','Roboto Condensed', sans-serif;
+  overflow-x: hidden;
 }
 
 
 #logo{
   height: 210px;
   margin-bottom: -15px;
-
 }
+
+#slogan {
+  margin-bottom: 10px;
+}
+
 /* NAVBAR */
 #collapse li{
   display: inline;
@@ -23,21 +28,38 @@ body{
 /* BANNER */
 .banner {
   height: 759px; 
-  background: linear-gradient(270deg, #adc1bc, #64aa99, #648eaa);
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  -o-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+      background: linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10) ), url('../img/day.png');
 }
 
+.content {
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+}
 
+.p-2 {
+  padding-left: 0 !important;
+}
+
+/*video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+11
+      transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  z-index: 0;
+}*/
 
 
 /* DATE */
 #date {
   font-size: 35px;
   font-weight: 500;
+  margin: 0;
 }
 /* location */
 #location {
@@ -48,18 +70,45 @@ body{
   border-radius: 10px;
 }
 #about{
-  background: linear-gradient(270deg, #474352, #a09da3, #479ff3);
-background-size: 600% 600%;
--webkit-animation: AnimationName 10s ease infinite;
--moz-animation: AnimationName 10s ease infinite;
--o-animation: AnimationName 10s ease infinite;
-animation: AnimationName 10s ease infinite;
+  background-color: #006A70;
+}
+
+#whatis {
+  background-color: #004A3F;
+}
+
+#faqs {
+  /*background: linear-gradient(270deg, #adc1bc, #64aa99, #648eaa);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;*/
+
+  background-color: #2482B4;
+
+}
+
+#sponsors {
+  /*background: linear-gradient(270deg, #474352, #a09da3, #479ff3);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;*/
+
+  background-color: #183642;
 }
 #aboutcitrushack{
   font-size: 1.5em;
   
 }
 
+footer {
+    background-color: #183642;
+    padding-bottom: 5%;
+
+}
 
 footer a>i {
   color: white !important;
@@ -68,8 +117,12 @@ footer a>i {
 p {
   color: #fff;
 }
+a {
+  color: #c5e99b;
+}
+
 h2 {
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-size: 3em;
   letter-spacing: 2px;
@@ -96,35 +149,17 @@ hr {
 }
 
 section{
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
-#faqs {
-  /*background: linear-gradient(270deg, #adc1bc, #64aa99, #648eaa);
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  -o-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;*/
-
-  background-color: #404146;
-
+.icon-faq {
+  box-shadow: none;
 }
 
 
 
-/* SPONSORS */
-#sponsors {
-  /*background: linear-gradient(270deg, #474352, #a09da3, #479ff3);
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  -o-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;*/
 
-  background-color: #54546c;
-}
 
 
 /* Grow */
@@ -148,9 +183,13 @@ section{
 .section-heading {
   font-size: 5em;
   font-weight: 700;
+  text-align: center;
 }
 
-#first-tier>a>img {
+div.text-center>a>img {
+}
+
+.first-tier>a>img {
   width: 50%;
 }
 
@@ -173,6 +212,10 @@ section{
   padding-right: 10%;
 }
 
+#organizers {
+  padding-top: 5%;
+}
+
 .question {
   padding: 2%;
   padding-top: 50px;
@@ -181,6 +224,10 @@ section{
 }
 #mlh{
   color: #fff;
+}
+
+#ch-staff {
+  border-radius: 50%;
 }
 .answer {
   padding: 2%;
@@ -241,6 +288,35 @@ section{
     margin-top: 0px;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+
+  h1 {
+    font-size: 2.5em !important;
+  }
+
+  #date {
+    font-size: 1.5em !important;
+  }
+
+  nav, #mlh-trust-badge {
+    display: none !important;
+  }
+
+  .section-heading {
+    font-size: 2em;
+  }
+
+  #our-organizers {
+    margin-top: 20%;
+  }
+
+  #about, #whatis {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+
 /* FONT AWESOME */
 i {
   display: inline-block;

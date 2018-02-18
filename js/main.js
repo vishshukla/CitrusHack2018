@@ -1,3 +1,8 @@
+AOS.init({
+  once: false,
+  easing: "ease-in-sine"
+});
+
 (function($) {
   "use strict"; // Start of use strict
 
