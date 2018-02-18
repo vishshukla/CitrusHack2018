@@ -27,8 +27,11 @@ body{
 
 /* BANNER */
 .banner {
-  height: 759px; 
-      background: linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10) ), url('../img/day.png');
+  height: 100vh;
+  background:  url('../img/day.png');
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
+  overflow: hidden;
 }
 
 .content {
@@ -37,6 +40,10 @@ body{
 
 .p-2 {
   padding-left: 0 !important;
+}
+
+.descrip-text {
+  padding-top: 25px !important;
 }
 
 /*video {
@@ -70,11 +77,11 @@ body{
   border-radius: 10px;
 }
 #about{
-  background-color: #006A70;
+  background-color: #004A3F;
 }
 
 #whatis {
-  background-color: #004A3F;
+  background-color: #006A70;  
 }
 
 #faqs {
