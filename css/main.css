@@ -113,7 +113,8 @@ body{
 }
 
 footer {
-    background-color: #183642;
+    background-color: #2482B4;
+    padding-top: 5%;
     padding-bottom: 5%;
 
 }
@@ -171,7 +172,10 @@ p.text-center>a>i {
 }
 
 
-
+.sponsor-text {
+  margin: 0;
+  padding: 0;
+}
 
 
 /* Grow */
@@ -220,8 +224,8 @@ div.text-center>a>img {
 }
 
 #faq-row {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #organizers {
