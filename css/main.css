@@ -16,7 +16,7 @@ body{
 }
 
 #slogan {
-  margin-bottom: 10px;
+  padding: 0;
 }
 
 /* NAVBAR */
@@ -28,9 +28,9 @@ body{
 /* BANNER */
 .banner {
   height: 100vh;
-  background:  url('../img/day.png');
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../img/day.png');
   background-repeat: no-repeat;
-  background-position: 0 -200px;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -164,6 +164,10 @@ section{
   box-shadow: none;
 }
 
+p.text-center>a>i {
+  margin-left: 1%;
+  margin-right: 1%;
+}
 
 
 
