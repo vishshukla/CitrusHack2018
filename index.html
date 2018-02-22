@@ -18,6 +18,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="js/aos/dist/aos.css">
+
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
 
@@ -26,9 +28,8 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <!-- <div class="container"> -->
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Citrus Hack</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,7 +39,7 @@
               <a class="nav-link js-scroll-trigger m-4" href="#home">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger m-4" href="#about">ABOUT</a>
+              <a class="nav-link js-scroll-trigger m-4" href="#whatis">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger m-4" href="#faqs">FAQS</a>
@@ -55,103 +56,128 @@
     <!-- BANNER -->
     <div class="banner" id="home">
       <div class="container">
-        <div class="text-center">
-          <img id="logo" src="img/logo.png" alt="citrus hack">
+
+        <!-- <video autoplay muted loop id="myVideo">
+  <source src="img/wowie.mp4" type="video/mp4">
+</video> -->
+        <div class="content">
+          <div class="text-center">
+          <img data-aos="zoom-out" id="logo" src="img/logo.png" alt="citrus hack">
         </div>
-        <h1 class="text-center text-white name">Citrus Hack</h1>
-        <p id="date" class="text-center p-2">April 21-22 at UC Riverside</p>
-        <hr class="line">
+        <h1 class="text-center text-white name" data-aos="fade-down" data-aos-duration="400" data-aos-delay="150">Citrus Hack</h1>
+        <p id="date" class="text-center" data-aos="flip-up" data-aos-delay="600">April 21-22 at UC Riverside</p>
+        <p id="slogan" class="text-center" data-aos="zoom-in-up" data-aos-delay="600">What will you discover?</p>
+        <hr data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="700" class="line">
         <div class="text-center">
-          <button id= "reg-btn" class="btn btn-danger" type="button">
-            Applications Opening Soon!
-          </button>
+          <a href="https://citrushack1.typeform.com/to/pClnxh">
+            <button data-aos="fade-up" data-aos-delay="1200" data-aos-anchor="#logo"id= "reg-btn" class="btn btn-danger" type="button">
+            Apply Now!
+            </button>
+          </a>
         </div>
+        </div>
+        
       </div>
     </div>
 
-    <!-- ABOUT -->
-    <section id="about">
+    <section id="whatis">
       <div class="container">
-        <h2>About</h2>
         <div class="row">
-          <div id="aboutcitrushack" class="col-sm-12">
-            <p class=" p-2">Citrus Hack was founded in 2014 by ACM and IEEE student members at the University of California, Riverside. Their goal was to create a place where students can create with the freedom of their creativity. Established by students for students, Citrus Hack has since become one of Southern California’s premier collegiate hackathons. Citrus Hack is a place where students can turn their ideas into the next technological boom.</p>
-            <p class="p-2">Our mission is to create a collaborative relationship between students and sponsors. The relationship fosters and enables innovations that will revolutionize across industries. Sponsors will be able to promote their brand to a large audience, while allowing students to harness their ability to create and innovate newer ideas. The garages of the dot-com era are now hackathons. Citrus Hack will only be able to establish that relationship with the help of its sponsors.</p>
-            <p class="p-2">Citrus Hack is a 24-hour hackathon. A hackathon invites collegiate students to a location to collaborate and innovate. Throughout the 24 hours participants work in teams on a project, attend workshops to learn about new technologies, and network with industry partners.</p>
+          <div id="aboutcitrushack" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
+            <img src="img/cee.png" alt="Citrus Hack logo" width="75%">
+            
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+            <h2 id="shibe-h2">What is Citrus Hack?</h2>
+            <p class="p-2 descrip-text">Citrus Hack is a 24-hour hackathon. A hackathon invites collegiate students to a location to collaborate and innovate. Throughout the 24 hours participants work in teams on a project, attend workshops to learn about new technologies, and network with industry partners.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+            <h2>Our History</h2>
+            <p class="p-2 descrip-text">Citrus Hack was founded in 2014 by ACM and IEEE student members at the University of California, Riverside. Their goal was to create a place where students can create with the freedom of their creativity. Established by students for students, Citrus Hack has since become one of Southern California’s premier collegiate hackathons. Citrus Hack is a place where students can turn their ideas into the next technological boom.</p>
+          </div>
+
+          <div id="aboutcitrushack" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
+            <img src="img/history.jpg" alt="Citrus Hack staff" width="100%" id="ch-staff">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
     <!-- FAQS -->
     <section id="faqs">
       <div class="container">
           <h2 class="section-heading">FAQS</h2>
-            <div class="row">
+            <div class="row" id="faq-row">
               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 question">
-                  <i class="fas fa-user"></i>
-                  <p> Who can attend?</p>
+                 
+                  <p class="q-p"><i class="fas fa-user icon-faq"></i> Who can attend?</p>
                   <div class="answer">
-                      All undergraduate university students. Recently graduated? You're welcome to attend if you graduated within the past year. All participants must adhere to <a id="mlh" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH's Code of Conduct</a>
+                      All undergraduate university students. Recently graduated? You're welcome to attend if you graduated within the past year. All participants must adhere to <a i
+
+                      d="mlh" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH's Code of Conduct</a>.
                   </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 question">
-                  <i class="fas fa-utensils"></i>
-                  <p>Will there be free food?</p>
+                  <p class="q-p"><i class="fas fa-utensils icon-faq"></i> Will there be free food?</p>
                   <div class="answer">
                       Yes! We will be providing meals along with refreshments and snacks throughout the event.
                   </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 question">
-                  <i class="fas fa-briefcase"></i>
-                  <p>What do I bring?</p>
+                  <p class="q-p"><i class="fas fa-suitcase icon-faq"></i> What do I bring?</p>
                   <div class="answer">
                       We require all participants to bring their student IDs. Also consider bringing some of the following: a hacking machine, cables for your hacking machine, headphones, pillow, and an extra set of clothes.
                   </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 question">
-                  <i class="far fa-money-bill-alt"></i>
-                  <p>How much does Citrus Hack cost?</p>
+                 
+                  <p class="q-p"><i class="fas fa-money-bill-alt icon-faq"></i> How much does Citrus Hack cost?</p>
                   <div class="answer">
                       Citrus Hack is absolutely free to attend!
                   </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 question">
-                  <i class="fas fa-code"></i>
-                  <p>Do I have to be a programmer?</p>
+                  <p class="q-p"><i class="fas fa-code icon-faq"></i> Do I have to be a programmer?</p>
                   <div class="answer">
                       Absolutely not! It doesn’t matter if you are a designer, a writer, or a chemistry major. There is a place for you here. There will be a team formation session at the beginning of the event to help form teams.
                   </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 question">
-                  <i class="fas fa-plane"></i>
-                  <p>Are there travel reimbursments?</p>
+                  <p class="q-p"><i class="fas fa-plane icon-faq"></i> Are there travel reimbursments?</p>
                   <div class="answer">
                       We currently do not support any form of travel reimbursements; however, we are working towards adding this benefit.
                   </div>
               </div>
               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 question">
-                  <i class="fas fa-users"></i>
-                  <p>Do I need a team? How large can my team be?</p>
+                  <p class="q-p"><i class="fas fa-users icon-faq"></i> Do I need a team? How large can my team be?</p>
                   <div class="answer">
                       We recommend working in a team. There will be a team formation event before hacking begins. Team sizes are capped at 4 members.
                   </div>
               </div>
               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 question">
-                  <i class="far fa-calendar-check"></i>
-                  <p>I signed up, when do I hear back?</p>
-                  <div class="answer">
-                      Challenge application results will be released in PUT DATE. Normal application results will be released PUT DATE.
+                  <p class="q-p"><i class="fas fa-calendar icon-faq"></i> What's the deadline for signing up?</p>
+                  <div class="answer"> The first deadline will be on March 31st, and the second deadline will be on April 7th. UCR students can apply by April 14th. You will hear back from us within a week of each deadline.
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 question">
+                  <p class="q-p"><i class="fas fa-question-circle icon-faq"></i> Any other questions?</p>
+                  <div class="answer"> Don't hesitate to <a href="mailto:citrushack@gmail.com">contact us</a>!
                   </div>
               </div>
             </div>
       </div>
-      <div id="anyquestions" class="text-center question">
-          <i class="far fa-comment"></i>
-          <p>Any other questions?</p>
-          <div class="answer">
-            <a class="text-white" href="mailto:contact@citrushack.com">Contact us!</a>
-          </div>
-      </div>
+      
     </section>
 <!-- SPONSORS -->
     <section id="sponsors">
@@ -163,72 +189,115 @@
         </div>
 
         <div class="row">
-          <div id="first-tier" class="col text-center">
+          <div  class="col text-center first-tier">
             <a href="https://www.autodesk.com/">
-              <img class="hvr-grow" src="img/autodesk.png" alt="Autodesk logo">
+              <img class="hvr-grow" src="img/autodesk.png" alt="Autodesk logo" style="filter: brightness(0) invert(1);">
             </a>
           </div>
         </div>
 
+        
         <div class="row align-items-center">
-          <div id="second-tier" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center second-tier">
+            <a href="https://exciteriverside.org">
+              <img class="hvr-grow" src="img/excite.png" alt="Excite logo" style="filter: brightness(0) invert(1);">
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center second-tier">
             <a href="http://cs.ucr.edu">
               <img class="hvr-grow" src="img/bcoe_cs.png" alt="CS department logo">
             </a>
           </div>
-          <div id="second-tier" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
-            <a href="https://github.com">
-              <img class="hvr-grow" src="img/github.png" alt="Github logo">
+
+          
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center second-tier">
+            <a href="https://xyz.xyz">
+              <img class="hvr-grow" src="img/xyz.svg" alt="xyz logo">
             </a>
           </div>
-          <div id="second-tier" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
-            <a href="https://exciteriverside.org">
-              <img class="hvr-grow" src="img/excite.png" alt="Excite logo">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center second-tier">
+            <a href="https://soylent.com">
+              <img class="hvr-grow" src="img/soylent.png" alt="Soylent logo" style="filter: brightness(0) invert(1);">
             </a>
           </div>
-          <div id="second-tier" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center second-tier">
+            <a href="https://drinkhint.com">
+              <img class="hvr-grow" src="img/hint.png" alt="Hint logo">
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center second-tier">
             <a href="http://coolermaster.com">
               <img class="hvr-grow" src="img/coolermaster.png" alt="Cooler Master logo">
             </a>
           </div>
-          <div id="second-tier" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
-            <a href="https://soylent.com">
-              <img class="hvr-grow" src="img/soylent.png" alt="Cooler Master logo">
-            </a>
-          </div>
-          <div id="second-tier" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center second-tier">
             <a href="https://hvmn.com/go-cubes">
-              <img class="hvr-grow" src="img/nootrobox.png" alt="Cooler Master logo">
+              <img class="hvr-grow" src="img/nootrobox.png" alt="Nootrobox logo">
             </a>
           </div>
-          <div id="second-tier" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
-            <a href="https://drinkhint.com">
-              <img class="hvr-grow" src="img/hint.png" alt="Cooler Master logo">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center second-tier">
+            <a href="https://github.com">
+              <img class="hvr-grow" src="img/github.png" alt="Github logo" style="filter: brightness(0) invert(1);">
             </a>
+          </div>
+          
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2 class="section-heading" id="our-organizers">ORGANIZERS</h2>
           </div>
         </div>
+
+        <div class="row align-items-center" id="organizers">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center second-tier">
+            <a href="https://acmucr.org">
+              <img src="img/acm.png" alt="ACM logo" class="hvr-grow" width="50%">
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center second-tier">
+            <a href="http://ieee.ee.ucr.edu/">
+              <img src="img/ieee.png" alt="IEEE logo" class="hvr-grow" width="50%">
+            </a>
+          </div>
+          <div class="col-sm-12">
+            <p class="text-center text-white sponsor-text" style="margin-top: 5% !important">Interested in being a sponsor?</p>
+            <p class="text-center text-white sponsor-text">Contact us at <a href="mailto:citrushack@gmail.com">citrushack@gmail.com</a> and check out our <a href="https://drive.google.com/open?id=1FetHmLOCEvpI3rMiT9Opxbf2ZZEC2QfF">sponsorship packet</a>.</p>
+
+          </div>
+        </div>
+
 
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer>
       <div class="container">
         <p class="text-center">
           <a href="https://facebook.com/CitrusHack/">
             <i class="fab fa-facebook-f "></i>
           </a>
-          <a class="mr-5 ml-5" href="mailto:citrushack@gmail.com">
+          <a href="mailto:citrushack@gmail.com">
             <i class="far fa-envelope"></i>
           </a>
           <a href="https://twitter.com/citrushack">
             <i class="fab fa-twitter"></i>
           </a>
+          <a href="https://www.instagram.com/citrushack_ucr/">
+            <i class="fab fa-instagram"></i>
+          </a>
         </p>
         <p class="m-0 text-center text-white">Made with &#9829; in Riverside, CA</p>
+        <p class="m-0 text-center text-white">Site by <a href="https://vishshukla.github.io">Vishwas Shukla</a> and <a href="http://patricktumbucon.com">Patrick Tumbucon</a></p>
+        <p class="m-0 text-center text-white">© 2018 Citrus Hack</p>
       </div>
       <!-- /.container -->
     </footer>
+
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=red" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/red.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -238,6 +307,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
+    <script src="js/aos/dist/aos.js"></script>
     <script src="js/main.js"></script>
 
   </body>
