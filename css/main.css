@@ -179,6 +179,11 @@ p.text-center>a>i {
   padding: 0;
 }
 
+#xyz{
+  margin-bottom: -10px;
+  /* TO OFFSET THE LOGO */
+}
+
 
 /* Grow */
 .hvr-grow {
