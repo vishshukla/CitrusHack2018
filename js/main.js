@@ -1,3 +1,7 @@
+AOS.init({
+  once: true,
+});
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -28,13 +32,37 @@
 
 })(jQuery); // End of use strict
 
-// $(document).ready(function() {
-// 	$(window).scroll(function() {
-//   	if($(document).scrollTop() > 10) {
-//     	$('#nav').addClass('shrink');
-//     }
-//     else {
-//     $('#nav').removeClass('shrink');
-//     }
-//   });
-// });
+
+var day = new Date();
+var hour = day.getHours();
+
+var banner = document.getElementById('home');
+var whatis = document.getElementById('whatis');
+var about = document.getElementById('about');
+var faqs = document.getElementById('faqs');
+var sponsors = document.getElementById('sponsors');
+var footer = document.getElementsByTagName('footer');
+
+if (hour >= 6 && hour <= 14) {
+  faqs.style.backgroundColor = "#2482B4";
+}
+
+else if (hour >= 15 && hour <= 18) {
+  banner.style.background = "linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/midday.png')";
+  banner.style.backgroundSize = "cover";
+  whatis.style.backgroundColor = "#B42433";
+  about.style.backgroundColor = "#4A002C";
+  faqs.style.backgroundColor = "#E57242";
+  sponsors.style.backgroundColor = "#280F27"
+  footer[0].style.backgroundColor = "#E57242";
+}
+
+else if (hour >= 19 || hour <= 5) {
+  banner.style.background = "linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/night.png')";
+  banner.style.backgroundSize = "cover";
+  whatis.style.backgroundColor = "#3724B4";
+  about.style.backgroundColor = "#00044A";
+  faqs.style.backgroundColor = "#4942E5";
+  sponsors.style.backgroundColor = "#0F1028"
+  footer[0].style.backgroundColor = "#4942E5";
+}
