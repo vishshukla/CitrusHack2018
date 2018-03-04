@@ -47,6 +47,9 @@ body{
   padding-top: 25px !important;
 }
 
+.sponsor-text {
+  display: default !important;
+}
 
 
 /*video {
@@ -86,7 +89,7 @@ body{
 #whatis {
   background-color: #006A70;  
 }
-f
+
 #faqs {
   /*background: linear-gradient(270deg, #adc1bc, #64aa99, #648eaa);
   background-size: 600% 600%;
@@ -174,14 +177,8 @@ p.text-center>a>i {
 }
 
 
-/* .sponsor-text {
-  margin: 0;
-  padding: 0;
-} */
-
-#xyz{
+#xyz {
   margin-bottom: -10px;
-  /* TO OFFSET THE LOGO */
 }
 
 
@@ -209,15 +206,12 @@ p.text-center>a>i {
   text-align: center;
 }
 
-div.text-center>a>img {
-}
-
 .first-tier>a>img {
   width: 50%;
 }
 
 .col-xl-6>a>img {
-  width: 45%;
+  width: 50%;
 }
 
 .col-xl-4>a>img {
@@ -235,9 +229,6 @@ div.text-center>a>img {
   padding-right: 5%;
 }
 
-/* #organizers {
-  padding-top: 5%;
-} */
 
 .question {
   padding: 2%;
@@ -245,6 +236,7 @@ div.text-center>a>img {
   text-align: left;
   color: white;
 }
+
 #mlh{
   color: #fff;
 }
@@ -252,6 +244,11 @@ div.text-center>a>img {
 #ch-staff {
   border-radius: 50%;
 }
+
+#our-organizers {
+  margin-top: 10%;
+}
+
 .answer {
   padding: 2%;
   text-align: left;
